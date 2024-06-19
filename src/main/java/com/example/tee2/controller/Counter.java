@@ -20,6 +20,8 @@ public class Counter {
 
         String strTaste = "";
         String strPrice = "";
+        String strReturn = "";
+
         String strMenu = request.getParameter("tee2");
 
         if (strMenu == null) {
@@ -29,17 +31,15 @@ public class Counter {
 
         if (strMenu.equals("1")) {
             Ameri ameri = new Ameri();
-            ameri.toString();
+            strReturn = ameri.toString();
         } else if (strMenu.equals("2")) {
             Cappu cappu = new Cappu();
-            cappu.toString();
+            strReturn = cappu.toString();
         } else if (strMenu.equals("3")) {
             Latte latte = new Latte();
-            latte.toString();
+            strReturn = latte.toString();
         }
 
-        return strTaste + " : " + strPrice;
-
+        return strReturn;
     }
-
 }

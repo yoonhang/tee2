@@ -7,8 +7,8 @@ public class Cappu {
 
     @Override
     public String toString() {
-        return "Cappu [strTaste=" + strTaste +]", strPrice=" + strPrice + "]";
-        
+        return "Cappu [strTaste=" + strTaste + ", strPrice=" + strPrice + "]";
+
     }
 
 }

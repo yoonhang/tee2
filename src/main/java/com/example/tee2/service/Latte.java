@@ -6,8 +6,8 @@ public class Latte {
 
     @Override
     public String toString() {
-        return "Latte [strTaste=" + strTaste +]", strPrice=" + strPrice + "]";
-        
+        return "Latte [strTaste=" + strTaste + ", strPrice=" + strPrice + "]";
+
     }
 
 }

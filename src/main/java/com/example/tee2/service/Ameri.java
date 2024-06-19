@@ -6,7 +6,7 @@ public class Ameri {
 
     @Override
     public String toString() {
-        return "Ameri [strTaste=" + strTaste +]", strPrice=" + strPrice + "]";
+        return "Ameri [strTaste=" + strTaste + ", strPrice=" + strPrice + "]";
 
     }
 

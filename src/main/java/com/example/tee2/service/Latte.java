@@ -1,5 +1,8 @@
 package com.example.tee2.service;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Latte {
     String strTaste = "라떼 - 달콤";
     String strPrice = "5000";

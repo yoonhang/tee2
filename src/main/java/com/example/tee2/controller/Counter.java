@@ -6,6 +6,7 @@ import com.example.tee2.service.Ameri;
 import com.example.tee2.service.Cappu;
 import com.example.tee2.service.Latte;
 
+import org.springframework.beans.factory.annotation.Autowired;
 // import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -13,6 +14,17 @@ import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 public class Counter {
+
+    Ameri ameri;
+    Latte latte;
+    Cappu cappu;
+
+    @Autowired
+    public Counter(Ameri am, Latte la, Cappu ca) {
+        this.ameri = am;
+        this.latte = la;
+        this.cappu = ca;
+    }
 
     // @PostMapping("/tee2/morning")
     @RequestMapping("/tee2/morning")

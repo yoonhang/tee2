@@ -1,5 +1,8 @@
 package com.example.tee2.service;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Cappu {
 
     String strTaste = "카푸 - 달달";

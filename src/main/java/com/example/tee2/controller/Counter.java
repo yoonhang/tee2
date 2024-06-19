@@ -30,8 +30,6 @@ public class Counter {
     @RequestMapping("/tee2/morning")
     public String doOrder(HttpServletRequest request) {
 
-        String strTaste = "";
-        String strPrice = "";
         String strReturn = "";
 
         String strMenu = request.getParameter("tee2");
